@@ -13,12 +13,23 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+// I AM DONE
 
 // Put your function here!
 // fn calculate_price_of_apples {
 
 // Don't modify this function!
+
+fn calculate_price_of_apples(quantity: i32) -> i32 {
+    if quantity > 40 {
+        // If Mary buys more than 40 apples, each apple costs 1 rustbuck
+        quantity * 1
+    } else {
+        // Otherwise, each apple costs 2 rustbucks
+        quantity * 2
+    }
+}
+
 #[test]
 fn verify_test() {
     let price1 = calculate_price_of_apples(35);
